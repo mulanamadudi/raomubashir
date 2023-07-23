@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        #movingText {
+            position: relative;
+            animation: moveText 5s infinite, blinkText 1s infinite;
+        }
+
+        @keyframes moveText {
+            0% { left: 0; }
+            100% { left: calc(100% - 150px); } /* Adjust the width of the text container */
+        }
+
+        @keyframes blinkText {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .roundButton {
+            display: inline-block;
+            background-color: #444;
+            border-radius: 50px;
+            padding: 10px 20px;
+            margin: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        .roundButton:hover {
+            background-color: #666;
+        }
+
+        .whiteTextRedButton {
+            background-color: white;
+            color: red;
+        }
+
+        #redShiftArea {
+            background-color: red;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #redShiftArea p {
+            width: 70%;
+            text-align: left;
+        }
+
+        #redShiftArea img {
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div id="movingText">This is my portfolio</div>
+
+    <div class="blackArea">
+        <a href="#" class="roundButton">Darling</a>
+        <a href="#" class="roundButton">Vestige</a>
+        <a href="#" class="roundButton">Homepage</a>
+        <a href="#" class="roundButton">Second Year</a>
+        <a href="#" class="roundButton">About</a>
+        <a href="#" class="roundButton">Contacts</a>
+        <a href="#" class="roundButton whiteTextRedButton">What is Our Services</a>
+    </div>
+
+    <div id="redShiftArea">
+        <div>
+            <h2>My Experience</h2>
+            <p>
+                I am an experienced person in making HTML and CSS websites using ChatGPT.
+                I am very fond of using ChatGPT to enhance the web development process.
+            </p>
+        </div>
+        <img src="your_image_url_here" alt="Your Picture">
+    </div>
+
+    <!-- You can add more sections and content for other pages if needed -->
+
+    <!-- CSS necessary for the page -->
+    <link rel="stylesheet" href="path_to_your_stylesheet.css">
+
+</body>
+</html>
